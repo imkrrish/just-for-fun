@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.text {
+  margin-top: 3%;
+  margin-bottom: 2%;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.catimg {
+  height: 50%;
+}
+
+.button-container {
+  width: 100%;
+  height: 30%;
+  margin-top: 2%;
+}
+
+.button {
+  backface-visibility: hidden;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 500px;
+  border: 0px solid #444;
+  border-width: 0px 0px 0px 0px;
+  padding: 10px 15px 10px 43px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.button > i {
+  background: #fff;
+  border-radius: 500px;
+  border: 0px solid transparent;
+  padding: 5px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+}
+
+.button > .ld {
+  font-size: initial;
+}
+
+#yesbutton {
+  position: fixed;
+  top: 75%;
+  left: 55%;
+  background: green;
+  width: 11%;
+}
+
+#nobutton {
+  position: absolute;
+  left: 39%;
+  top: 75%;
+  background: red;
+  width: 8%;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .text {
+    font-size: 1rem;
+    margin-top: 8%;
+    margin-bottom: 7%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .button {
+    font-size: 15px;
+  }
+
+  #nobutton {
+    width: 22%;
+    left: 15%;
+  }
+
+  #yesbutton {
+    width: 35%;
+  }
+}
